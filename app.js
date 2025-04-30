@@ -9,8 +9,12 @@ const port = 8000;
 app.use((req, res, next) => {
   console.log("Request received");
   
-res.send("This is a basic respnse ");
-
+//res.send("This is a basic respnse ");
+//  object response --------
+res.send({
+    name: "apple",
+    color : "red",
+});
 });
 
 // Start the server
