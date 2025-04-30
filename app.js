@@ -10,11 +10,15 @@ app.use((req, res, next) => {
   console.log("Request received");
   
 //res.send("This is a basic respnse ");
+console.log("-------------------------");
 //  object response --------
-res.send({
-    name: "apple",
-    color : "red",
-});
+// res.send({
+//     name: "apple",
+//     color : "red",
+// });
+console.log("-------------------------");
+
+res.send("<h1>Fruits</h1><ul><li> apple</li><li> orange</li></ul>")
 });
 
 // Start the server
