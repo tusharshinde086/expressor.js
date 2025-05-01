@@ -14,8 +14,8 @@ app.get("/:username/:id", (req, res) => {
 
 //  Query parameter route
 app.get("/search", (req, res) => {
-    console.log(req.query); // log the query params
-    res.send("No results");
+    let {q}= req.query;
+    res.send(`search by result or query: ${q}`);
 });
 
 // Start the server
