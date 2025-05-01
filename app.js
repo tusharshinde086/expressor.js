@@ -26,3 +26,6 @@ res.send("<h1>Fruits</h1><ul><li> apple</li><li> orange</li></ul>")
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+//routing 
+// it is a process of selecting specific path for traffic in network or bet.n or accrocc net
