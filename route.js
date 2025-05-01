@@ -22,6 +22,10 @@ app.get("*",(req,res)=>{
     res.send("this path does not exist!");
 });
 
+app.post("/",(req,res)=>{
+    res.send("You send a request to root ");
+});
+
 // Start the server
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
