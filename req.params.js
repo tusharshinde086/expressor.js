@@ -14,7 +14,10 @@ app.get("/:username/:id", (req, res) => {
 
 //  Query parameter route
 app.get("/search", (req, res) => {
-    let {q}= req.query;
+    let {q }= req.query;
+    if(!q){
+        res.send("<h1>nothing searched </h1>");
+    }
     res.send(`search by result or query: ${q}`);
 });
 
